@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default">
-    <div class="container-fluid">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#BASE_TOP_COLLAPSE" aria-expanded="false">
@@ -8,12 +8,21 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="" ui-sref="home">{{application.name}}</a>
+            <a class="navbar-brand" href="" ui-sref="home">
+              <img src="http://www.magicjackforbusiness.com/img/home/m-j-logo-blue-white.png" alt="" />
+            </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="BASE_TOP_COLLAPSE">
+            <ul class="nav navbar-nav">
+              <li><a href="#">PRICING</a></li>
+              <li><a href="#">SAVINGS</a></li>
+              <li><a href="#">EASY SETUP</a></li>
+              <li><a href="#">SUPPORT</a></li>
+            </ul>
             <ul class="nav navbar-nav navbar-right">
+              <li><a class="btn btn-purple" href="#">BUY</a></li>
                 <li uib-dropdown ng-if="!base.currentUser.Anonymous">
                     <a href="#" uib-dropdown-toggle role="button"><i class="fa fa-user"></i> Account <span class="caret"></span></a>
                     <ul uib-dropdown-menu>

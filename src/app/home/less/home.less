@@ -1,4 +1,44 @@
 #COMPONENT_Home {
-  padding-top:15px;
+  .home-background {
+    height: 500px;
+    background: #fff url("http://www.magicjackforbusiness.com/img/home/home-hero-bkg.jpg") no-repeat scroll center;
+    background-size: cover;
+    color: white;
+    .home-background-gradient {
+      height: 500px;
+      background: linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 15%, transparent 56%);
+    }
+    .home-background-content {
+      padding-top: 50px;
+    }
+    .dollars {
+      display: inline-block;
+      font-size: 3.6rem;
+      position: absolute;
+      top: -0.4rem;
+    }
+    .value {
+      display: inline-block;
+      font-size: 10rem;
+      margin-left: 2.4rem;
+      font-weight: 500;
+      line-height: 0.8;
+    }
+    .terms {
+      display: inline-block;
+      width: 110px;
+      font-size: 1.2rem;
+    }
+  }
   background-color:@component-home-bg;
+  .home-blue-bar {
+    background-color: #00ADEF;
+    padding: 15px 0;
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+  }
+  .btn-blue {
+    padding: 10px 50px;
+  }
 }

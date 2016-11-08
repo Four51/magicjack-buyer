@@ -1,16 +1,23 @@
-<article id="CategoryList">
-    <h3 ng-if="categorylist.length > 0" class="page-header">
-        {{categorylist.length > 1 ? 'Categories' : 'Category'}}
-    </h3>
+<article id="CategoryList" class="container">
+
     <div class="category-list row">
         <div class="category-list-item col-md-3" ng-repeat="category in categorylist">
-            <div class="thumbnail" ui-sref="catalog.category({categoryid: category.ID})">
-                <figure ng-if="category.xp.image">
-                    <img class="img-responsive" ng-src="{{category.xp.image.URL}}" alt="Category Image">
-                </figure>
-                <div class="caption">
-                    <h4 class="text-center">{{category.Name || category.ID}}</h4>
-                </div>
+            <div class="panel">
+              <div class="panel-heading">
+                  <h4 class="text-center">{{category.Name || category.ID}}</h3>
+              </div>
+              <div class="panel-body">
+                <h2 class="text-center">Order Now</h2>
+                <ul>
+                  <li><i class="fa fa-check"></i> FREE Shipping</li>
+                  <li><i class="fa fa-check"></i> FREE Phones</li>
+                  <li><i class="fa fa-check"></i> FREE to transfer number</li>
+                  <li><i class="fa fa-check"></i> $0 Due at sign-up*</li>
+                </ul>
+              </div>
+              <div class="start-order">
+                <a ui-sref="catalog.category({categoryid: category.ID})" class="btn btn-purple btn-block">START NOW</a>
+              </div>
             </div>
         </div>
     </div>
